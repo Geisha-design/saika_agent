@@ -13,6 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>yu-ai-agent</name>
     <description>yu-ai-agent</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>auth-service</module>
+        <module>business-service</module>
+        <module>yu-ai-agent</module>
+    </modules>
     <url/>
     <licenses>
         <license/>
@@ -176,18 +182,6 @@
                             <version>1.18.36</version>
                         </path>
                     </annotationProcessorPaths>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
                 </configuration>
             </plugin>
         </plugins>
